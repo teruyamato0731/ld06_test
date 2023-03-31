@@ -2,15 +2,20 @@ version: "3"
 
 services:
   ros2:
-    image: ghcr.io/teruyamato0731/dev-humble
+    build:
+      context: .
+      dockerfile: Dockerfile
     environment:
       - DISPLAY
       - QT_X11_NO_MITSHM=1
     volumes:
       # Working
-      - ../:/workspaces/${COMPOSE_PROJECT_NAME:?error empty COMPOSE_PROJECT_NAME}:cached
+      - ../:/workspaces/ld06_test:cached
       # GUI
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - /dev:/dev:rw
     tty: true
-    command: sleep infinity
-    working_dir: /workspaces/${COMPOSE_PROJECT_NAME:?error empty COMPOSE_PROJECT_NAME}
+    command: sleep inf
+    working_dir: /workspaces/ld06_test
+    privileged: true
+    ipc: host
