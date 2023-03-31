@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  ros2:
+    image: ghcr.io/teruyamato0731/dev-humble
+    environment:
+      - DISPLAY
+      - QT_X11_NO_MITSHM=1
+    volumes:
+      # Working
+      - ../:/workspaces/${COMPOSE_PROJECT_NAME:?error empty COMPOSE_PROJECT_NAME}:cached
+      # GUI
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    tty: true
+    command: sleep infinity
+    working_dir: /workspaces/${COMPOSE_PROJECT_NAME:?error empty COMPOSE_PROJECT_NAME}
