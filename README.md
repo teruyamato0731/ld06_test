@@ -15,7 +15,7 @@ LD06 LiDAR をUSBシリアル変換ケーブルに繋ぎ、USBをPCに挿す。
 `lsusb` を実行し、シリアル変換機を検知していることを確認。
 また `ls /dev/ | grep ttyUSB` を実行し、シリアル変換機のポートを確認しておく。
 
-/dev/ 以下に ttyUSB がなかった場合 -> [#Trouble Shooting](#Trouble%20Shooting)
+/dev/ 以下に ttyUSB がなかった場合 -> [#Trouble Shooting](#trouble-shooting)
 
 # Quick Start
 あなたがすでにVS CodeとDockerをインストールしている場合は、上記のバッジまたは[こちら](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/teruyamato0731/dev_humble)をクリックすることで使用することができる。<br>
