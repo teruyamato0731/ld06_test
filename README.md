@@ -18,7 +18,7 @@ LD06 LiDAR をUSBシリアル変換ケーブルに繋ぎ、USBをPCに挿す。
 /dev/ 以下に ttyUSB がなかった場合 -> [#Trouble Shooting](#trouble-shooting)
 
 # Quick Start
-あなたがすでにVS CodeとDockerをインストールしている場合は、上記のバッジまたは[こちら](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/teruyamato0731/dev_humble)をクリックすることで使用することができる。<br>
+あなたがすでにVS CodeとDockerをインストールしている場合は、上記のバッジまたは[こちら](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/teruyamato0731/ld06_test)をクリックすることで使用することができる。<br>
 これらのリンクをクリックすると、vscodeが必要に応じてdev container拡張機能を自動的にインストールし、ソースコードをコンテナボリュームにクローンし、使用するためのdev containerを起動する。
 
 上記手順がうまく行かなかった場合、下記コマンドを手動で実行する。
